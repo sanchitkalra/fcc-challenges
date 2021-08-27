@@ -1,0 +1,94 @@
+<!DOCTYPE html>
+<html>
+    <head>
+        <title>Survey Form</title>
+    </head>
+    <style>
+        
+        body{
+            font-family: sans-serif;
+        }
+        
+        header{
+            text-align: center;
+        }
+        
+        .heading{
+            font-size: 20px;
+        }
+        
+        p{
+            font-size: 20px;
+        }
+        
+        form{
+            padding-bottom: 50px;
+            padding-top: 50px;
+            width: 50%;
+            background: aqua;
+            margin-top: 25px;
+            margin-bottom: 25px;
+        }
+        
+        input{
+            width: 400px;
+            height: 30px;
+            border-radius: 4px;
+            margin-top: 15px;
+            margin-bottom: 20px;
+        }
+        
+        select{
+            margin-top: 15px;
+        }
+        
+        .headline{
+            margin-top: 25px;
+            margin-bottom: 25px;
+        }
+        
+        button{
+            width: 300px;
+            height: 50px;
+            margin-top: 25px;
+            background: green;
+            color: white;
+            font-size: 25px;
+        }
+    
+    </style>
+    <body>
+        <header>
+            <h1 id="title" class="headline">FreeCodeCamp Survery Form</h1>
+            <p id="description">Help us improve the platform with your feedback.</p>
+            <hr>
+        </header>
+        <main>
+            <center>
+                <form id="survey-form">
+                    <label class="heading">Name:</label><br>
+                    <input required type="text" placeholder="Name"><br>
+                    <label class="heading">Email:</label><br>
+                    <input required type="text" placeholder="Email"><br>
+                    <label class="heading">Age(optional)</label><br>
+                    <input type="number" placeholder="Age"><br>
+                    <label class="heading">What currently describes your current role?</label><br>
+                    <select id="dropdown" name="role" required>
+                        <option disabled selected>Select current role</option>
+                        <option value="student">Student</option>
+                        <option value="job">Full Time Job</option>
+                        <option value="learner">Full Time Learner</option>
+                        <option value="preferNo">Prefer not to say</option>
+                        <option value="other">Other</option>
+                    </select><br>
+                    <label for="name"> 
+                        <input id="name" type="radio" name="definitely">Definitely 
+                        <input id="name" type="radio" name="maybe">Maybe 
+                        <input id="name" type="radio" name="not-sure">Not sure 
+                    </label>
+                    <button type="submit">Submit Form</button>
+                </form>
+            </center>
+        </main>
+    </body>
+</html>
